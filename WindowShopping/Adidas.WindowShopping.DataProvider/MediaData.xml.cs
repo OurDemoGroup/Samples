@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 
+
 namespace Adidas.WindowShopping.DataProvider
 {
 	public class MediaData
