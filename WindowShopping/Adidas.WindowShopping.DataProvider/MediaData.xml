@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MediaInfo LayoutHeight ="40" LayoutWidth="40">
+	<MovieGroups>
+		<MovieGroup id="101" title="First Movie Group">
+			<Movies>
+				<Movie id="1011" path="11.avi" isRoot ="true">
+					<InfoNodes>
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_1" X="1" Y="1" />
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_2" X="1" Y="20" />
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_3" X="20" Y="15" />
+					</InfoNodes>
+					<ActionNodes>
+						<MovieAction moveId="1012" X="30" Y="10" />
+						<MovieAction moveId="1013" X="35" Y="20" />
+					</ActionNodes>
+				</Movie>
+				<Movie id="1012" path="12.avi">
+					<InfoNodes>
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_21" X="35" Y="35" />
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_22" X="22" Y="21" />
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_23" X="13" Y="32" />
+					</InfoNodes>
+					<ActionNodes>
+						<MovieAction moveId="1011" X="21" Y="35" />
+						<MovieAction moveId="1013" X="25" Y="11" />
+					</ActionNodes>
+				</Movie>
+				<Movie id="1013" path="13.avi">
+					<InfoNodes>
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_31" X="10" Y="12" />
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_32" X="5" Y="21" />
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_33" X="30" Y="31" />
+					</InfoNodes>
+					<ActionNodes>
+						<MovieAction moveId="1011" X="12" Y="20" />
+						<MovieAction moveId="1012" X="26" Y="11" />
+					</ActionNodes>
+				</Movie>
+			</Movies>
+		</MovieGroup>
+		<MovieGroup id="102" title="Second Movie Group">
+			<Movies>
+				<Movie id="1021" path="11.avi" isRoot ="true">
+					<InfoNodes>
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_21" X="35" Y="35" />
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_22" X="22" Y="21" />
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_23" X="13" Y="32" />
+					</InfoNodes>
+					<ActionNodes>
+						<MovieAction moveId="1022" X="30" Y="10" />
+						<MovieAction moveId="1023" X="35" Y="20" />
+					</ActionNodes>
+				</Movie>
+				<Movie id="1022" path="12.avi">
+					<InfoNodes>
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_1" X="1" Y="1" />
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_2" X="1" Y="20" />
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_3" X="20" Y="15" />
+					</InfoNodes>
+					<ActionNodes>
+						<MovieAction moveId="1021" X="21" Y="35" />
+						<MovieAction moveId="1023" X="25" Y="11" />
+					</ActionNodes>
+				</Movie>
+				<Movie id="1023" path="13.avi">
+					<InfoNodes>
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_31" X="10" Y="12" />
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_32" X="5" Y="21" />
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_33" X="30" Y="31" />
+					</InfoNodes>
+					<ActionNodes>
+						<MovieAction moveId="1021" X="12" Y="20" />
+						<MovieAction moveId="1022" X="26" Y="11" />
+					</ActionNodes>
+				</Movie>
+			</Movies>
+		</MovieGroup>
+		<MovieGroup id="103" title="Third Movie Group">
+			<Movies>
+				<Movie id="1031" path="11.avi" isRoot ="true">
+					<InfoNodes>
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_31" X="10" Y="12" />
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_32" X="5" Y="21" />
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_33" X="30" Y="31" />
+					</InfoNodes>
+					<ActionNodes>
+						<MovieAction moveId="1032" X="30" Y="10" />
+						<MovieAction moveId="1033" X="35" Y="20" />
+					</ActionNodes>
+				</Movie>
+				<Movie id="1032" path="12.avi">
+					<InfoNodes>
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_1" X="1" Y="1" />
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_2" X="1" Y="20" />
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_3" X="20" Y="15" />
+					</InfoNodes>
+					<ActionNodes>
+						<MovieAction moveId="1031" X="21" Y="35" />
+						<MovieAction moveId="1033" X="25" Y="11" />
+					</ActionNodes>
+				</Movie>
+				<Movie id="1033" path="13.avi">
+					<InfoNodes>
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_21" X="35" Y="35" />
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_22" X="22" Y="21" />
+						<Info img="img.jpg" qr ="qr.jpg" desc="trulala_23" X="13" Y="32" />
+					</InfoNodes>
+					<ActionNodes>
+						<MovieAction moveId="1031" X="12" Y="20" />
+						<MovieAction moveId="1032" X="26" Y="11" />
+					</ActionNodes>
+				</Movie>
+			</Movies>
+		</MovieGroup>
+	</MovieGroups>
+</MediaInfo>

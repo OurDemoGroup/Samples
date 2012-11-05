@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="Adidas.WindowShopping.Views.ShopWindowView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:Controls="clr-namespace:Adidas.WindowShopping.Controls" 
+			 xmlns:cal="http://www.caliburnproject.org"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" mc:Ignorable="d" 
+			 Loaded="ShopWindowLoaded">
+    <Grid>
+		<!--<Controls:MediaGrid Grid.Column="1" Grid.RowSpan="2" Width="800" Height="680"
+							RowsCount="{Binding LayoutWidth}"
+							ColumnsCount="{Binding LayoutHeight}"
+							SelectedMovieId="{Binding SelectedMovieId}"
+							Movies="{Binding Movies}"
+							MediaNodes="{Binding MediaNodes}">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="ActionBtnClick">
+					<cal:ActionMessage MethodName="ShowMediaAction">
+						<cal:Parameter Value="{Binding Path=SelectedMovieId, 
+													   RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Controls:MediaGrid}}}"/>
+					</cal:ActionMessage>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Controls:MediaGrid>-->
+		
+		<Controls:MediaCanvas Grid.Column="1" Grid.RowSpan="2" Width="800" Height="600"
+							  LayoutHeight="{Binding LayoutHeight}"
+							  LayoutWidth="{Binding LayoutWidth}"
+							  MediaNodes="{Binding MediaNodes}"
+							  MoviesGroup="{Binding MoviesGroup}"
+							  SelectedMovieId="{Binding SelectedMovieId}">
+			<TextBlock Text="{Binding MoviesGroup.Title}" 
+					   Foreground="White" FontSize="22" FontWeight="Bold"
+					   Margin="20,20,0,0"/>
+			<Button Content="^" Width="40" Height="40" Margin="10,0,0,0" Canvas.Top="260"
+					FontSize="30" FontWeight="Bold"
+					cal:Message.Attach="[Event Click] = [Action ShowPreviousMovieGroup()]"/>
+			<Button Content="v" Width="40" Height="40" Margin="10,0,0,0" Canvas.Top="300"
+					FontSize="25" FontWeight="Bold"
+					cal:Message.Attach="[Event Click] = [Action ShowNextMovieGroup()]"/>
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="ActionBtnClick">
+					<cal:ActionMessage MethodName="ShowMediaAction">
+						<cal:Parameter Value="{Binding Path=SelectedMovieId, 
+													   RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Controls:MediaCanvas}}}"/>
+					</cal:ActionMessage>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Controls:MediaCanvas>
+	</Grid>
+</UserControl>

@@ -1,0 +1,13 @@
+﻿<Window x:Class="HangUIThread.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+		</Grid.RowDefinitions>
+		<Button Grid.Row="0" Content="Hang UI thread" Height="30" HorizontalAlignment="Center" Click="Button_Click"></Button>
+		<MediaElement Name="mediaElement" Source="1.avi" Grid.Row="1"></MediaElement>
+	</Grid>
+</Window>
