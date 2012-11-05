@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FPSApp", "FPSApp\FPSApp.csproj", "{63EAEA5B-9082-464B-94A8-93F895E29984}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheckingService", "HealthCheckingService\HealthCheckingService.csproj", "{1203EC4D-BC68-4F0B-8FB0-0E5671D7A341}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFServer", "WCFServer\WCFServer.csproj", "{5D99F995-DE6F-404F-8A60-E932C89F1B75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63EAEA5B-9082-464B-94A8-93F895E29984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63EAEA5B-9082-464B-94A8-93F895E29984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63EAEA5B-9082-464B-94A8-93F895E29984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63EAEA5B-9082-464B-94A8-93F895E29984}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1203EC4D-BC68-4F0B-8FB0-0E5671D7A341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1203EC4D-BC68-4F0B-8FB0-0E5671D7A341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1203EC4D-BC68-4F0B-8FB0-0E5671D7A341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1203EC4D-BC68-4F0B-8FB0-0E5671D7A341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D99F995-DE6F-404F-8A60-E932C89F1B75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D99F995-DE6F-404F-8A60-E932C89F1B75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D99F995-DE6F-404F-8A60-E932C89F1B75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D99F995-DE6F-404F-8A60-E932C89F1B75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
