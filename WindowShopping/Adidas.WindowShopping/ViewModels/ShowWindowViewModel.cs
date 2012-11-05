@@ -109,9 +109,9 @@ namespace Adidas.WindowShopping.ViewModels
 
 		private void NotifyAllPropertiesChange()
 		{
+			NotifyOfPropertyChange(() => SelectedMovieId);
 			NotifyOfPropertyChange(() => MediaNodes);
 			NotifyOfPropertyChange(() => MoviesGroup);
-			NotifyOfPropertyChange(() => SelectedMovieId);
 			NotifyOfPropertyChange(() => CanShowNextMovieGroup);
 			NotifyOfPropertyChange(() => CanShowPreviousMovieGroup);
 		}

@@ -13,7 +13,7 @@ namespace Adidas.WindowShopping.Controls
 	{
 		private readonly List<Button> _mediaBtns = new List<Button>();
 		private readonly Dictionary<string, MediaElement> _backgroundMedia = new Dictionary<string, MediaElement>();
-		private MediaElement _backgroundMovie;
+		private MediaElement _previousBackgroundMovie;
 
 		#region DependencyProperties
 
@@ -83,14 +83,17 @@ namespace Adidas.WindowShopping.Controls
 		protected override void OnPropertyChanged(DependencyPropertyChangedEventArgs e)
 		{
 			base.OnPropertyChanged(e);
-			if (e.Property == SelectedMovieIdProperty)
+			
+			if (e.Property == SelectedMovieIdProperty || 
+				e.Property == MoviesGroupProperty)
 			{
-				var selectedMovie = !string.IsNullOrEmpty(SelectedMovieId)
-										? MoviesGroup.Movies.FirstOrDefault(mov => mov.Id == SelectedMovieId)
-										: null;
+				if (e.Property == MoviesGroupProperty)
+				{
+					_backgroundMedia.Clear();
+				}
 
 				ClearMediaNodesLayout();
-				SetMediaLayout(selectedMovie);
+				SetMediaLayout();
 			}
 		}
 
@@ -98,8 +101,12 @@ namespace Adidas.WindowShopping.Controls
 
 		#region Private methods
 
-		private void SetMediaLayout(IMediaNode selectedMovie)
+		private void SetMediaLayout()
 		{
+			var selectedMovie = !string.IsNullOrEmpty(SelectedMovieId)
+										? MoviesGroup.Movies.FirstOrDefault(mov => mov.Id == SelectedMovieId)
+										: null;
+
 			if (selectedMovie == null)
 				return;
 
@@ -199,17 +206,19 @@ namespace Adidas.WindowShopping.Controls
 
 		private void OnBackgroundVideoEnded(object sender, RoutedEventArgs e)
 		{
-			ShowMediaNodes();
+			//Check that we still stay in current action
+			if (_previousBackgroundMovie == _backgroundMedia[SelectedMovieId])
+				ShowMediaNodes();
 		}
 
 		private void OnBackgroundVideoOpened(object sender, RoutedEventArgs e)
 		{
 			//Uses for smooth movie loading (removed previous media element only after new movie will be loaded)
-			if (_backgroundMovie != null && Children.Contains(_backgroundMovie))
+			if (_previousBackgroundMovie != null && Children.Contains(_previousBackgroundMovie))
 			{
-				Children.Remove(_backgroundMovie);
+				Children.Remove(_previousBackgroundMovie);
 			}
-			_backgroundMovie = _backgroundMedia[SelectedMovieId];
+			_previousBackgroundMovie = _backgroundMedia[SelectedMovieId];
 		}
 
 		private void ClearMediaNodesLayout()
