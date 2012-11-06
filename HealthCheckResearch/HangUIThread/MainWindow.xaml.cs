@@ -26,9 +26,11 @@ namespace HangUIThread
 
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
-			while (true)
+			int i = 40000000;
+			int j = 0;
+			while ( j <= i )
 			{
-				;
+				j++;
 			}
 		}
 	}
