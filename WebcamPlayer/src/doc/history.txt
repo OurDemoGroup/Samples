@@ -1,0 +1,61 @@
+WebcamPlayer - History
+======================
+
+(+) Added
+(*) Changed
+(-) Removed
+(x) Error / bug (fix)
+
+===========
+Version 1.1
+===========
+
+Release date:
+=============
+2009/01/08
+
+Manual:
+=======
+Included docs
+
+Added/fixed:
+============
+(+) Added sample application how to snap images
+(*) It's now possible to set the current device via bindings
+(*) Lots of minor improvements
+
+To-do:
+======
+-
+
+Known bugs:
+===========
+-
+
+**********************************************************
+
+===========
+Version 1.0
+===========
+
+Release date:
+=============
+2008/12/22
+
+Manual:
+=======
+Included docs
+
+Added/fixed:
+============
+(+) Initial version
+
+To-do:
+======
+-
+
+Known bugs:
+===========
+-
+
+**********************************************************
